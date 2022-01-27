@@ -1,0 +1,77 @@
+.header {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.spinner {
+	width: 160px;
+	height: 160px;
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	margin-top: 50px;
+}
+
+.spinner div {
+	background: white;
+	height: 5px;
+	width: 5px;
+	position: absolute;
+	border-radius: 50%;
+	transform-origin: 80px 80px;
+	transform: rotate(36deg);
+
+}
+.spinner div:nth-child(2) {
+	transform: rotate(72deg);
+}
+.spinner div:nth-child(3) {
+	transform: rotate(108deg);
+	width: 10px;
+	height: 10px;
+}
+.spinner div:nth-child(4) {
+	transform: rotate(144deg);
+	width: 15px;
+	height: 15px;
+}
+.spinner div:nth-child(5) {
+	transform: rotate(180deg);
+	width: 20px;
+	height: 20px;
+}
+.spinner div:nth-child(6) {
+	transform: rotate(216deg);
+	width: 25px;
+	height: 25px;
+}
+.spinner div:nth-child(7) {
+	transform: rotate(252deg);
+	width: 30px;
+	height: 30px;
+}
+.spinner div:nth-child(8) {
+	transform: rotate(288deg);
+	width: 35px;
+	height: 35px;
+}
+.spinner div:nth-child(9) {
+	transform: rotate(324deg);
+	width: 40px;
+	height: 40px;
+}
+.spinner div:nth-child(10) {
+	transform: rotate(360deg);
+	height: 45px;
+	width: 45px;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

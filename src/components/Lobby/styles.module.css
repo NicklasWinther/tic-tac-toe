@@ -1,0 +1,57 @@
+.container{
+    min-width: 500px;
+    width: 50vw;
+    height: 70vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #666;
+    color:white;
+    font-size: 1.2rem;
+}
+.input{
+    display: flex;
+    color: white;
+    margin: 20px;
+    width:80%;
+}
+.input .error{
+color:rgb(255, 153, 153);
+
+padding: 10px;
+}
+.input input, .input button{
+    padding: 10px;
+    outline: none;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+.input button{
+    padding: 10px 20px;
+    margin-left: 0;
+}
+.rooms{
+    width: 80%;
+}
+
+.rooms ul{
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+
+}
+.rooms li{
+    font-size: 1.3rem;
+    padding: 10px;
+    background: #666;
+}
+
+.rooms li:nth-child(odd){
+    background: #777;
+}

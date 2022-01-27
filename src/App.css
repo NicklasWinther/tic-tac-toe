@@ -1,38 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  background: transparent;
+
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: tan;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.start{
+  position: absolute;
+  left:0px;
+}
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  border:1px solid black;  
+  width:750px;
+  height: 750px;
+  margin: 0 auto;
+  box-sizing: content-box;
 }
 
-.App-link {
-  color: #61dafb;
+.cell{
+  box-sizing: border-box;
+  border:1px solid black;  
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+ .cell svg{
+  font-size: 240px;
+  font-weight: 100;
+}
+svg.circle{
+  font-size: 180px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.75);
+  border: 3px solid #aaa;
+  border-radius: 25px;
+  width:500px;
+  height: 500px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal h1{
+  text-shadow: 5px 5px 5px #aaa;
+  font-size: 3rem;
+}
+
+.modalMenu{
+  display: flex;
+  flex-direction: column;
+  width:70%;
+}
+
+.modalMenu button{
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 5px 2px #aaa;
 }
