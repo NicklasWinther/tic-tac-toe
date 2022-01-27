@@ -45,7 +45,7 @@ function Game({ socket, move, player }) {
 			]);
 			setIsOpen(false);
 		});
-	}, []);
+	});
 
 	let icon = React.createElement(
 		player === "X" ? IoCloseOutline : IoEllipseOutline
